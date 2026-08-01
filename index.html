@@ -41,8 +41,10 @@
     </div>
 
     <script>
-       const apiKey = "93c2e76869f1dfb3dfb68d25ca779ca2";
-       const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="; 
+       const apiUrl = "/api/weather?city=";
+
+    // Inside checkWeather:
+    // const response = await fetch(apiUrl + encodeURIComponent(city)); 
 
        const searchBox = document.querySelector(".search input");
        const searchBtn = document.querySelector(".search button");
