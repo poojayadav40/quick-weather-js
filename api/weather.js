@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
     const { city } = req.query;
-    const apiKey = process.env.WEATHER_API_KEY; // Vercel se key read karega
+    const apiKey = process.env.WEATHER_API_KEY; // Vercel key read
 
     try {
         const response = await fetch(
